@@ -1,0 +1,121 @@
+<style>
+  body {
+    font-family: "Lato", sans-serif;
+  }
+
+  /* Style for the top frame */
+  .topnav {
+    height: 120px;
+    width: 100%;
+    margin-left: 160px; /* Same as the width of the sidenav */
+    position: fixed;
+    border: ridge;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+  }
+
+  /* Style for the side frame */
+  .sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    border: ridge;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+
+  /* Style for the main frame */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    margin-top: 120px; /* Same as the height of the topnav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+
+  /* Style the button that is used to open and close the collapsible */
+  .collapsible {
+    background-color: #111;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-top: 20px;
+  }
+
+  /* Style for the Input text bar for URL search */
+  .input_text {
+    display: block;
+    width: 60%;
+    border: ridge;
+    background-color: #ffffff;
+    color: black;
+    padding: 2px 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+    margin-left: 200px;
+    margin-top: 50px;
+  }
+
+  /* Hover property for the Input text bar for URL search */
+  .input_text:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  /* Style for the buttons */
+  .button {
+    background-color: #ffffff; /* white*/
+    border: none;
+    color: black;
+    padding: 60px;
+    border: ridge;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+  }
+
+  /* Style for the Upload button */
+  .upload_button {
+    border-radius: 4px;
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+
+  /* Style 1 for the text labels */
+  .para1 {
+    width: 60%;
+    border: none;
+    color: black;
+    padding: 2px 4px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 10px;
+  }
+
+  /* Style 2 for the text labels */
+  .message1 {
+    width: 60%;
+    border: none;
+    color: black;
+    padding: 2px 4px;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 20px;
+  }
+
+</style>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Linking with the CSS file -->
+    <link rel="stylesheet" href="students_lesson_plan.css">
+    <title>Student Lesson Plan</title>
+  </head>
+
+  <body>
+    <!-- Top frame of the webpage -->
+    <div class="topnav">
+    </div>
+
+    <!-- Side frame of the webpage -->
+    <div class="sidenav">
+
+      <!-- Logo -->
+      <div>
+        <figure>
+          <a href="students_lesson_plan.html">
+            <img src="images\logo.jpg" alt="logo" style="width:60px;height:60px;">
+          </a>
+        </figure>
+      </div>
+
+      <!-- Icon and Link for Student webpage in the side frame -->
+      <div>
+        <figure>
+          <a href="students.html">
+            <img src="images\student.jpg" alt="students" style="width:50px;height:50px;">
+            <figcaption>Students</figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <!-- Icon and Link for Lesson Plan webpage in the side frame -->
+      <div>
+        <figure>
+          <a href="lesson_plan.html">
+            <img src="images\lesson_plan.jpg" alt="Lesson Plan" style="width:50px;height:50px;">
+            <figcaption>Lesson Plan</figcaption>
+          </a>
+        </figure>
+      </div>
+
+      <!-- Icon and Link for Settings webpage in the side frame -->
+      <div>
+        <figure>
+          <a href="settings.html">
+            <img src="images\setting.jpg" alt="setting" style="width:50px;height:50px;">
+            <figcaption>Settings</figcaption>
+          </a>
+        </figure>
+      </div>
+
+    <!-- Closing the div tag for the side frame -->
+    </div>
+
+    <!-- Main frame of the web page -->
+    <div class="main">
+      <!-- Adding a collapsible button for "Videos" -->
+      <button type="button" class="collapsible">Videos</button>
+
+      <!-- Adding a form element for text box and upload button -->
+      <form>
+        <!-- Adding text box for the URL search -->
+        <label>
+          <input class="input_text" type="text" name="" onfocus="this.value=''" value="Insert URL here">
+        </label>
+
+        <!-- Label -->
+        <div class="para1">
+          <p>or</p>
+        </div>
+
+        <!-- Adding Upload button -->
+        <button class="button upload_button">Upload</button>
+      </form>
+    </div>
+
+    <!-- Toggle Script for collapsible - "Videos" -->
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
+
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
+    </script>
+
+  </body>
+</html>
